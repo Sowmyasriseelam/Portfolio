@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d95e6b7165.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <div class="logo"><span class='purple'>P</span>ortfolio</div>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            
+            <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <p>Web Developer Enthusiast</p>
+            <h1>Hi, I'm <span class="purple">Sowmya</span></h1>
+        </div>
+    </div>
+</div>
+<!-- ------------------about---------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"> 
+                <img src="images/profile.jpeg" height="px">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi! I'm a Computer Science undergrad passionate about web development and cybersecurity. I enjoy building responsive, user-friendly websites and exploring how to keep them secure. I'm always curious, love learning new tools and technologies, and enjoy turning ideas into real, functional projects. Let's build something great—and secure—together!</p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML , CSS , JS</li>
+                            <li><span >Languages</span><br> C , PYHTON , Nosql</li>
+                            <li><span>Others</span><br>Cybersecurity , AI/ML</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Belimo - Internship</span><br>IT integration within building management systems (BMS). Focused on key industry tools such as BACnet and Niagara Framework. </li>
+                            <li><span>Can You Hack it - Hackathon</span><br>Front end role </li>
+                            <!-- <li><span>Web Development</span><br>Web app development</li> -->
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bright Riders School, Abu dhabi, UAE</span><br></li>
+                            <li><span>IIITDMJ, India</span><br></li>
+                            <!-- <li><span>Web Development</span><br></li> -->
+                        </ul>
+                     </div>
+            </div>
+        </div>
+
+    </div>
+<!----------------------------services--------------------------------->
+<!-- <div class="services">
+    <div class="container">
+        <h1 class="sub-title">services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web design</h2>
+                <i class="fa-solid fa-code"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus praesentium natus 
+                    architecto, quibusdam voluptatibus libero aliquam iste veniam explicabo vitae facilis 
+                    sunt sint placeat, accusamus repudiandae provident accusantium ipsum pariatur.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>AI/Ml</h2>
+                <i class="fa-solid fa-code-branch"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus praesentium natus 
+                    architecto, quibusdam voluptatibus libero aliquam iste veniam explicabo vitae facilis 
+                    sunt sint placeat, accusamus repudiandae provident accusantium ipsum pariatur.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX</h2>
+                <i class="fa-solid fa-laptop-code"></i>  
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus praesentium natus 
+                    architecto, quibusdam voluptatibus libero aliquam iste veniam explicabo vitae facilis 
+                    sunt sint placeat, accusamus repudiandae provident accusantium ipsum pariatur.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-------------portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/biomat.jpg"/>
+                <div class="layer">
+                    <h3>Drug Diffusion in Biomaterials</h3>
+                    <p>The drug diffusion was modeled using the 1D Fick's Second Law of Diffusion.Developed a numerical simulation of drug diffusion in polymeric biomaterials and provided a user-friendly interface for parameter tuning and visualization. The tool can serve both educational and preliminary design purposes. </p>
+                    <a href="https://github.com/Sowmyasriseelam/Drug_diffusion"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+               <div class="work">
+                <img src="images/proj.png"/>
+                  <div class="layer">
+                    <h3>Daily expense system</h3>
+                    <p>A simple web-based application that helps users record and manage their daily expenses. Built using PHP and MySQL, it allows users to add, view, edit and track their spending habits over time. With a clean dashboard and secure session handling, this app makes it easy to stay on top of your personal budget.</p>
+                    <a href="https://github.com/Sowmyasriseelam/DailyExpense"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+               <div class="work">
+                <img src="images/movrec.webp"/>
+                  <div class="layer">
+                    <h3>Movie-Recommendation-System</h3>
+                    <p>Suggests films based on the similarity of their content. The system uses content-based filtering techniques, where recommendations are generated by analyzing movie features such as genres, plot summaries, cast, and keywords.</p>
+                    <a href="https://github.com/Sowmyasriseelam/Movie-Recommendation-System"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+
+
+
+    </div>
+</div>
+<!-- contct -->
+ <div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact-Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sowmyasriseelam@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9502335225</p>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/sowmya-sri-seelam-7b1639290/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/soma_soms23/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Sowmyasriseelam"><i class="fa-brands fa-github"></i></a>
+                
+            </div>
+            <a href="images/SowmyaSri_resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name='Message' rows="6" placeholder="Your message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <!-- copytrith -->
+    
+     </div>
+      <div class="copyright">
+      <p> Copyright © Sowmya 2025 </p>
+
+        </div>
+ </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right='0';
+
+    }
+     function closemenu(){
+        sidemenu.style.right='-200px';
+        
+    }
+    </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxev75ncpKpgV24hVdSYi7HI4uxNHiiOXlkpUSdOKdsI5HGSZuhdYuCvTvMH4cCWA9vog/exec'
+    const form = document.forms['submit-to-google-sheet']
+ const msg= document.getElementById("msg")
+
+
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully! Thanks bruv!"
+        setTimeout(function(){
+            msg.innerHTML=''
+
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</div>
+</body>
+</html>
